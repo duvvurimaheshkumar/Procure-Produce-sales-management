@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Producer Sign Up
+{% endblock %}
+
+{% block styles %} 
+  <link href="{% static 'css/forms.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="main-container">
+  <div class="img-container">
+    <img src="{% static 'img/img_jpeg.jpg' %}" alt="">
+  </div>
+  <div class="form-container">
+    
+    <div class="title">Sign up Form</div>
+    <div class="subtitle">Fill in the details for verification</div>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          {{ form.fname }}
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          {{ form.lname }}
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          {{ form.email }}
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mobile">Contact</label>
+          {{ form.contact }}
+        </div>
+        <div class="form-group">
+          <label for="postcode">Postal Code</label>
+          {{ form.postcode }}
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group address">
+          <label for="address">Address</label>
+          {{ form.address }}
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="land-img">Land Images</label>
+          <div class="docs">
+            <label for="land-img" class="custom-file-input">Choose Image</label>
+            {{ form.pictures }}
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ID-Proof">ID Proof</label>
+          <div class="docs">
+            <label for="document" class="custom-file-input">Choose File</label>
+            {{ form.document }}
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+</div>
+
+{% endblock %}

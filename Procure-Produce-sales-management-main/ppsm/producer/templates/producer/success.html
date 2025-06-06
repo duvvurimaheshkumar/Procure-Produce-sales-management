@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Registered
+{% endblock %}
+
+{% block styles %} 
+  <link href="{% static 'css/success.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="main-success-container">
+      <div class="title">sent for verification</div>
+      <div class="subtitle"> Thank you for registering </div>
+    </div>
+{%endblock%}

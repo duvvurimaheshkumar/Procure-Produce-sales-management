@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Producer{% endblock %}</title>
+    {% block styles %}
+    {% endblock %}
+     <link href="{% static "css/globalNav.css" %}" rel="stylesheet"/>
+     
+</head>
+
+<body>
+    <header>
+     <div class="navbar">
+         <div class="logo">Producer</div>
+         <ul class="links">
+             <li><a href="/producer">Home</a></li>
+             <li><a href="/producer/login">Login</a></li>
+             <li><a href="#">Account</a></li>
+             <li><a href="#">Help</a></li>
+         </ul>
+         <a href="#" class="action_btn">Login</a>
+         <div class="toggle_btn">
+             <i class="fa-solid fa-bars"></i>
+         </div>
+     </div>
+     <div class="dropdown_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="action_btn1"><a href="#">Login</a></li>
+        </ul>
+    </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+
+    <script src="{% static "jscript/producer.js" %}"></script>
+
+</body>   
+
+
+</html>

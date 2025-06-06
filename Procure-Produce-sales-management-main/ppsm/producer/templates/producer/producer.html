@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block title%} Home {%endblock%}
+{%block styles %} 
+<link href="{% static "css/producer.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <section class="img1">
+        <div class="text1">
+                <span class="textbg" onclick="scrollToNextSection()">Produce Procurement</button>
+        </div>
+    </section>
+    <section class="nextSection">
+    <section class="section section-dark">
+        <h2 class="heading">Welcome to Our Platform</h2>
+        <p>Welcome to our platform, where quality meets convenience for both producers and buyers alike! If you're a producer with top-tier products to sell, we're here to connect you with eager buyers ready to purchase your produce. Whether you're a seasoned professional or just starting out, our platform offers the perfect opportunity to showcase your offerings to a wide audience. Simply click the link below to sign up and start your journey with us today! </p>
+    </section>
+    <section class="img2">
+        <div class="text1">
+            <span class="textbg "><a href="signup">Sign Up</a></span>
+        </div>
+    </section>
+    <section class="section section-light">
+        <h2 class="heading">More About us</h2>
+        <p>Discover quality products at your fingertips. Create an account today to browse and buy from our curated selection of goods. Quality and convenience await - start shopping now!</p>
+    </section>
+    <section class="img3">
+        <div class="text1">
+            <span class="textbg">Shop Now</span>
+        </div>
+    </section>
+    <section class="section section-dark">
+        <h2 class="heading"></h2>
+        <p>And if you're a discerning buyer on the hunt for top-notch products, you've come to the right place. Our curated selection showcases the best offerings from producers of all backgrounds, ensuring you have access to a diverse range of quality goods. With just a few clicks, you can create an account, browse our catalog, and purchase items that align with your tastes and preferences. Say goodbye to endless searching and hello to a seamless shopping experience. Quality and convenience await - start exploring and shopping with us now!</p>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+    </section>
+</section>
+    <footer>
+        <p>&copy; 2024 Procure-Produce-Sales-Management. All rights reserved.</p>
+    </footer>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Producer Log in</title>
+  <link href="{% static "css/producer.css" %}" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="img-container">
+      <img src="{% static 'img/img_jpeg.jpg' %}" alt="">
+    </div>
+    <div class="form-container">
+      <div class="title">Login Form</div>
+      <div class="subtitle">fill in the details for verification</div>
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ userForm.as_p }}
+        {% if error_message %}
+            <p>{{ error_message }}</p>  <!-- Display the error message -->
+        {% endif %}
+        <div class="form-row">
+            <button type="submit">Submit</button>
+            </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

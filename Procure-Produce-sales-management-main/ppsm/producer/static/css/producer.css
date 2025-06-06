@@ -1,0 +1,102 @@
+html, body{
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+    font-family: "Lato",sans-serif;
+    font-weight: 400px;
+    line-height: 1.8em;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+footer {
+    width: 100%;
+    background-color: #001e18;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+.img1{
+    background-image: url(../img/img1land.jpg);
+    min-height: 100%;
+   
+}
+.img2{
+    background-image: url(../img/img2land.jpg);
+    min-height:500px;
+   
+}
+.img3{
+    background-image: url(../img/img3land.jpg);
+    min-height: 500px;
+   
+}
+.img1 , .img2 ,.img3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text1{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textbg{
+    color: white;
+    padding: 20px;
+    background-color: rgb(33, 53, 43);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.textbg:hover{
+    color: rgb(186, 107, 12);
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light{
+    background-color: rgb(83, 202, 162);
+    color: rgb(61, 60, 60);
+}
+.section-dark{
+    background-color: rgb(10, 182, 127);
+}
+
+#scrollBtn {
+    display: none; /* Hide the button by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: grey;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block title %}Add Produce{% endblock %}
+{% block content %}
+    <div class="main-container">
+    <h1>Add Produce</h1>
+    <form id="produce-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Produce</button>
+    </form>
+    </div>
+    <script src="{% static "css/addproduce.js" %}"></script>
+{% endblock %}

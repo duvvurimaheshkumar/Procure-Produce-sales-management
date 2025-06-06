@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block title%} Home {%endblock%}
+
+{% block content %}
+
+{%block extra_css%} 
+<link href="{% static "css/producerlanding.css" %}" rel="stylesheet">
+{% endblock %}
+    <section class="img1">
+        <div class="text1">
+                <span class="textbg" onclick="scrollToNextSection()">Procure Produce</button>
+        </div>
+    </section>
+    <section class="nextSection">
+    <section class="section section-dark">
+        <h2 class="heading">Who We Are</h2>
+        <p>If you're a producer with quality products to sell, we can connect you with eager buyers ready to purchase your produce. Whether you're a seasoned professional or just starting out, we're here to help. Click the link below to sign up and start your journey with us today!</p>
+    </section>
+    <section class="img2">
+        <div class="text1">
+            <span class="textbg"><a href="signup">Sign Up</a></span>
+        </div>
+    </section>
+    <section class="section section-light">
+        <h2 class="heading">About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid cumque iste voluptatem porro exercitationem? Dolores, facilis! Sint sapiente nam accusamus a quae quidem quia mollitia unde neque voluptate voluptatibus, aliquam ad exercitationem aliquid est nulla consectetur distinctio ab at blanditiis quibusdam inventore velit. Corrupti, accusamus. Obcaecati iure aperiam vel unde alias animi quam, at maxime quod numquam repellendus inventore minus, corporis, nemo quasi officiis vitae dicta quia magnam possimus beatae quidem? Adipisci odio ea rerum maiores error eaque possimus magni repellat assumenda tempora consectetur quibusdam eveniet, asperiores, neque nostrum voluptatum ratione commodi provident! Eos incidunt totam minus distinctio corporis?</p>
+    </section>
+    <section class="img3">
+        <div class="text1">
+            <span class="textbg">section 3</span>
+        </div>
+    </section>
+    <section class="section section-dark">
+        <h2 class="heading">section 3</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquid cumque iste voluptatem porro exercitationem? Dolores, facilis! Sint sapiente nam accusamus a quae quidem quia mollitia unde neque voluptate voluptatibus, aliquam ad exercitationem aliquid est nulla consectetur distinctio ab at blanditiis quibusdam inventore velit. Corrupti, accusamus. Obcaecati iure aperiam vel unde alias animi quam, at maxime quod numquam repellendus inventore minus, corporis, nemo quasi officiis vitae dicta quia magnam possimus beatae quidem? Adipisci odio ea rerum maiores error eaque possimus magni repellat assumenda tempora consectetur quibusdam eveniet, asperiores, neque nostrum voluptatum ratione commodi provident! Eos incidunt totam minus distinctio corporis?</p>
+        <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+    </section>
+</section>
+    <script src="../../static/jscript/index.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Produce-Procure. All rights reserved.</p>
+    </footer>
+{% endblock %}
+
